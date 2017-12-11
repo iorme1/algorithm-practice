@@ -1,0 +1,31 @@
+Calculating a tip psuedo-code:
+  1. take out phone
+  2. select the calculator app
+  3. enter in the total bill
+  4. multiply total bill by .20
+  5. Write down this calculation on the check to the right of tip amount.
+
+
+
+ Putting leashes on two dogs before walk psuedo-code:
+  1. grab both leashes from basket
+  2. call one dog over
+  3. clip one of the leashes to the dogs collar
+  3. call other dog over
+  4. clip other leash to other dog's collar
+  5. grab the ends of both leashes at the same time
+  6. begin walking with both leashes in either hand
+
+
+
+Making toast psuedo-code:
+  1. grab one piece of bread
+  2. put piece of bread in toaster slot
+  3. press down on toaster handle until it locks
+  4. wait until toaster handle slides the bread up form the slot
+  5. grab toast from toaster
+  6. place toast on a plate
+  7. grab a butter knife
+  8. grab butter
+  9. take knife and slice off small portion of butter
+  10. spread butter on toast with butter knife
