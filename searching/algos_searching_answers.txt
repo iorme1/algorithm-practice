@@ -1,0 +1,68 @@
+1. Given the alphabetically sorted collection in this checkpoint,
+   how many iterations would it take to find the value G using linear search?
+
+   answer:
+      7 iterations. 7 elements to iterate through until we get G.
+
+
+
+2. Given the alphabetically sorted collection in this checkpoint,
+   how many iterations would it take to find the value G using binary search?
+
+   answer:
+     3 iterations.  On first iteration we find the D is less than G, so
+     we now deal with E through G.  On second iteration, we find that F is
+     less than G.  On third iteration, all that is left is the answer...G.
+
+
+
+
+3. Calculate fib(10), fib(11), fib(12) by hand.
+
+   answer:
+      fib(10):  0,1, (1+0)
+                0,1,1,(1+1)
+                0,1,1,2,(2+1)
+                0,1,1,2,3,(3+2)
+                0,1,1,2,3,5,(5+3)
+                0,1,1,2,3,5,8,(8+5)
+                0,1,1,2,3,5,8,13,(13+8)
+                0,1,1,2,3,5,8,13,21,(21+13)
+                0,1,1,2,3,5,8,13,21,34,(34+21)
+                0,1,1,2,3,5,8,13,21,34,55,(55+34)
+                0,1,1,2,3,5,8,13,21,34,55,89  => fib(10) => 89
+
+      fib(11):  ....continued
+                0,1,1,2,3,5,8,13,21,34,55,89,(89+55)
+                0,1,1,2,3,5,8,13,21,34,55,89,144 => fib(11) => 144
+
+      fib(12): ....continued
+              0,1,1,2,3,5,8,13,21,34,55,89,144,(144 + 89)
+              0,1,1,2,3,5,8,13,21,34,55,89,144,233 => fib(12) => 233
+
+
+
+
+
+4. Given an unsorted collection of a million items, which algorithm would you choose
+   between linear search and binary search? Would you use an iterative or recursive
+   solution? Explain your reasoning.
+
+   answer:
+      For an unsorted collection of a million items, I would use linear search
+      because binary search only works on sorted lists. I would use an iterative
+      solution because there is no means of breaking this problem down into smaller
+      pieces due to the collection being unsorted.
+
+
+
+
+5. Given a sorted collection of a million items, which algorithm would you choose
+   between linear search and binary search? Would you use an iterative or recursive
+   solution? Explain your reasoning.
+
+   answer:
+      For a sorted collection of a million items, I would use binary search because
+      it would run at O(log n) time whereas iterative search would be O(n). I think
+      both iterative and recursive solutions here would perform around the same speed,
+      given the benchmark I performed. 

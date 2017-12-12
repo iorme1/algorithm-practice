@@ -1,0 +1,11 @@
+fibonacci recursive benchmark:
+
+  0.000000   0.000000   0.000000 (  0.001266)
+
+
+fibonacci iterative benchmark:
+
+  0.000000   0.000000   0.000000 (  0.000010)
+
+
+iterative benchmark appears to be significantly faster here. 
