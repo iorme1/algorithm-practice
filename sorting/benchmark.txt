@@ -1,0 +1,31 @@
+4.) Using Ruby's benchmark module, measure the time it takes for all of the
+    sorting algorithms discussed in this checkpoint to sort a collection of
+    fifty items. Use your output to create a bar chart.
+
+
+Benchmarks:
+-----------
+bucket sort: 0.000000   0.000000   0.000000 (  0.000051)
+
+quick sort: 0.000000   0.000000   0.000000 (  0.000070)
+
+heap sort:  0.000000   0.000000   0.000000 (  0.000085)
+-----------
+
+5.) Looking at the bar chart, speculate on why you think some sort algorithms
+are faster than others and provide rationale as to your thought process.
+
+    answer:
+
+    - Bucketsort appears to be most beneficial when you know that the data
+    to be sorted is uniformly distributed. This means that the numbers between
+    the minimum number and maximum number have equal probability of being selected
+    at random.
+
+    - Quicksort  is used when your priority is average case performance. It
+    is O(nlogn) on average and has a bad worst-case of O(n^2)
+
+    - Heapsort is used when your priority is achieving the best worst-case performance.
+     It is said to guarantee performance of O(nlogn).
+
+     
