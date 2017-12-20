@@ -1,0 +1,82 @@
+1. Describe an analogy for relating an algorithm that has efficiency O(1) and another algorithm that has O(2^n).
+    -An example would be: An algorithm that has O(1) is a Cheetah and an algorithm that has O(2^n) is a Snail.
+
+    answer:  O(1):  teleporting from San Francisco to New York
+             O(2^n): Walking from San Francisco to New York
+
+2. In plain English, what is the best case scenario for binary search?
+
+    answer: The best case scenario for binary search is O(1).  In english, it means
+    we found the element on the first iteration in which we assign a variable "mid" to
+    the middle element of the array...and that mid variable happened to be the element we
+    were searching for.
+
+
+3. In plain English, what is the worst-case scenario for binary search?
+
+    answer:  The worst-case scenario for binary search is O(logn). In english, this means
+    if we have an array of 100 elements and we kept eliminating half of the array until there
+    was only one element left, it would take log100 time. Meaning whatever we need to raise
+    2 to the power of to get 100. In this case, it would take 6 divisions/iterations.
+
+
+4. In plain English, what is the bounded-case scenario for binary search?
+
+    answer:  The bounded-case scenario is the same as worst-case scenario.
+
+
+5. Create a graph using the data below. below are the values you'll need.
+
+    (0,1)
+    (1,2)
+    (2,4)
+    (3,8)
+    (4,16)
+    (5,32)
+    (6,64)
+    (7,128)
+    (8,256)
+    (9,512)
+    (10,1024)
+
+6. What is the limit of the function above as n approaches infinity?
+
+    answer:  infinity
+
+
+7. What is the Big-O of an algorithm that has the data points above?
+
+    answer: O(2^n)
+
+
+8. Write a Ruby method that takes a number n. This method must print
+the worst-case number of iterations for linear search to find an item
+in collections of size one to n. Use it to generate a table of worst-case
+iterations of collections up to size 10.
+
+    answer:
+
+    def linear_search(arr,n)
+      arr.each { |num| puts "#{num}" if num === n }
+    end
+
+    list = [1,2,3,4,5,6,7,8,9,10]
+    linear_search(list,10)
+
+9. Create a graph from the output using Google Sheets or other graphing software.
+Analyze the graph and denote its Big-O somewhere on the graph.
+
+
+10. What is the Big-O of binary search?
+
+    answer: O(logn)
+
+
+11. What is the Big-Ω of binary search?
+
+    answer: O(1)
+
+
+12. What is the Big-Ө of binary search?
+
+    answer: O(logn)
