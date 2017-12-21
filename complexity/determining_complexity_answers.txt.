@@ -1,0 +1,163 @@
+1.)
+ def goodbye_world(n)
+    puts "Goodbye World! #{n}"
+ end
+
+
+  answer:
+    the goodbye_world algorithm's Big-O is O(1). No matter the input,
+    the algorithm will print "Goodbye World! N" once. This is considered constant time.
+
+
+
+2.)
+  def find_largest(collection)
+      largest = collection[0]
+      collection.length.times do |i|
+         if collection[i] >= largest
+            largest = collection[i]
+          end
+       end
+      largest
+   end
+
+
+   answer:
+
+    This algorithm's Big-O is O(n). This is considered linear time.
+    This algorithm runs in linear time because no the matter the input for collection,
+    this algorithm will execute a loop based off the length of the collection. Even if
+    the algorithm finds the largest value before the loop has reached the last element, it
+    will continue checking each element until the last element has been iterated over.
+
+
+
+3.)
+  def find_largest(collection)
+      largest = collection[0][0]
+      collection.length.times do |i|
+         subcollection = collection[i]
+         subcollection.length.times do |i|
+            if subcollection[i] >= largest
+           largest = subcollection[i]
+        end
+      end
+    end
+    largest
+  end
+
+
+  answer:
+
+      This algorithm's Big-O is O(n^2). You have n collection with n subcollection. You must
+      iterate over n * n, which is n^2.
+
+
+4.)
+  def numbers(n)
+    if (n == 0)
+     return 0
+    elsif (n == 1)
+     return 1
+    else
+     return numbers(n-1) + numbers(n-2)
+    end
+  end
+
+
+  answer:
+
+    This algorithm's Big-O is O(2^n). This means that this algorithm runs at
+    exponential time. Each method call calls itself twice
+    until n becomes 1 or 0.
+
+
+
+5.)
+
+  def iterative(n)
+    num1 = 0
+    num2 = 1
+
+    i = 0
+    while i < n-1
+      tmp = num1 + num2
+      num1 = num2
+      num2 = tmp
+      i+=1
+    end
+  num2
+end
+
+
+    answer:
+
+    This algorithm's Big-O is O(n).  No matter the input, this method will
+    always iterate through the entire collection of n.  We start at 0, increment
+    i by 1 on each iteration until i equals the length of the collection minus one.
+    The other operations in this algorithm all perform at O(1) or constant time.
+
+
+
+
+6.)
+
+def sort(collection, from=0, to=nil)
+ if to == nil
+   # Sort the whole collection, by default
+   to = collection.count - 1
+ end
+
+ if from >= to
+   # Done sorting
+   return
+ end
+
+ # Take a pivot value, at the far left
+ pivot = collection[from]
+
+ # Min and Max pointers
+ min = from
+ max = to
+
+ # Current free slot
+ free = min
+
+ while min < max
+   if free == min # Evaluate collection[max]
+     if collection[max] <= pivot # Smaller than pivot, must move
+       collection[free] = collection[max]
+       min += 1
+       free = max
+     else
+       max -= 1
+     end
+   elsif free == max # Evaluate collection[min]
+     if collection[min] >= pivot # Bigger than pivot, must move
+       collection[free] = collection[min]
+       max -= 1
+       free = min
+     else
+       min += 1
+     end
+   else
+     raise "Inconsistent state"
+   end
+ end
+
+ collection[free] = pivot
+
+ sort collection, from, free - 1
+ sort collection, free + 1, to
+
+ collection
+end
+
+
+
+
+  answer:
+
+  This algorithm's Big-O is O(n log n).  we continually split the array into smaller
+  and smaller sorted halves.  each iteration to sort a smaller half performs at O(n), linear
+  time. we perform this linear operation log n times.
