@@ -1,0 +1,5 @@
+version 1 Big-O: O(n^2)
+
+version 2 Big-O:  O(n log n)
+
+version 3 Big-O: O(n log n)
